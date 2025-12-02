@@ -1,4 +1,4 @@
-# Análisis del Cambio Climático utilizando Big Data
+# Análisis del Cambio Climático y Predicción de Temperatura utilizando Big Data
 Este proyecto construye un pipeline completo de Big Data para analizar la evolución de la temperatura global utilizando el dataset **GlobalLandTemperaturesByCity.csv**, proveniente del Berkeley Earth Surface Temperature Study y publicado en Kaggle.
 
 El objetivo es demostrar una solución integral que incluya:
