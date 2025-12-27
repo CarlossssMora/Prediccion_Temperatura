@@ -3,7 +3,7 @@ import subprocess
 import pandas as pd
 
 # Ruta local del CSV
-LOCAL_PATH = "/home/carlos-mora/Documentos/IPN/6to_Semestre/Big_Data/programas/proyecto/data/raw/GlobalLandTemperaturesByCity.csv"
+LOCAL_PATH = "/home/samuel/Documentos/Prediccion_Temperatura/data/raw/GlobalLandTemperaturesByCity.csv"
 
 # Ruta destino en HDFS
 HDFS_DIR = "/user/climate/raw/"
