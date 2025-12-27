@@ -108,7 +108,7 @@ Finalmente, se despliega una visualización de gráficas que toman como base los
 - Predicción futura (2030–2050)
 - Entre otras
 
-Para esta etapa, lo primero que se debe de hacer es ejecutar la etapa 4, una vez que se termina de ejecutar, dentro de la carpeta del proyecto pero fuera de los entornos virtuales, lo que se debe hacer es comprobar que al poner este comando:
+Para esta etapa, lo primero que se debe de hacer es ejecutar la etapa 4, una vez que se termina de ejecutar, en una terminal dentro de la carpeta del proyecto pero fuera de los entornos virtuales, lo que se debe hacer es comprobar que al poner este comando:
 ```bash
 hdfs dfs -ls /user/climate/model_output
 ```
