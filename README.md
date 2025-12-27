@@ -108,7 +108,33 @@ Finalmente, se despliega una visualización de gráficas que toman como base los
 - Predicción futura (2030–2050)
 - Entre otras
 
+Para esta etapa, lo primero que se debe de hacer es ejecutar la etapa 4, una vez que se termina de ejecutar, dentro de la carpeta del proyecto pero fuera de los entornos virtuales, lo que se debe hacer es comprobar que al poner este comando:
+```bash
+hdfs dfs -ls /user/climate/model_output
+```
+Se pueda ver:
+```bash
+predictions/
+metrics/
+```
+
+Luego, se deben copiar los resultados obtenidos que se encuentran en HDFS a local:
+```bash
+hdfs dfs -get /user/climate/model_output data/dashboard/
+```
+
+Verificar que se encuenten predictions y metrics
+```bash
+ls data/dashboard/model_output
+```
+Activar el entorno virtual con:
+```bash
+source dashboard-env/bin/activate
+```
+
+
 Ejecutar con:
 ```bash
-spark-submit /tu_ruta_local_al_proyecto/src/5_visualization/dashboard.py
+streamlit run src/5_visualization/dashboard.py
+
 ```
