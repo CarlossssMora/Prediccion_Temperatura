@@ -27,7 +27,7 @@ El objetivo es demostrar una solución integral que incluya:
 **Columnas principales:**
 - `dt` — Fecha  
 - `AverageTemperature` — Temperatura promedio en tierra en grados Celsius
-- `AverageTemperatureUncertainty` — 
+- `AverageTemperatureUncertainty` — Incertidumbre de la medición correcta de la temperatura
 - `City` — Ciudad
 - `Country` — País
 - `Latitude`, `Longitude` — Latitud y Longitud, respectivamente
@@ -39,6 +39,11 @@ Este dataset contiene **temperaturas mensuales históricas** para miles de ciuda
 # Arquitectura del Pipeline
 
 El pipeline tiene cinco etapas principales:
+<p align="center">
+  <img width="3509" height="2580" alt="placeholder_arquitectura" src="https://github.com/user-attachments/assets/0a8fc713-ae71-4813-a146-52732405fcc0" />
+</p>
+
+Cada una de las etapas se explica de manera breve en la sección de Ejecución del pipeline
 
 ---
 
@@ -93,7 +98,7 @@ spark-submit /tu_ruta_local_al_proyecto/src/3_analysis/spark_eda.py
 ```
 
 ## 4. Entrenamiento del modelo predictivo
-En este programa se entrenan los modelos para la predicción de la temperatura global y el autoentrenamiento de los modelos para la predicción de temperaturas por país, además de mostrar las métricas (RMSE, MAE, R²), curvas de predicción y dataset final de predicciones (Parquet).
+En este programa se entrenan el modelo para la predicción de la temperatura global, además de mostrar las métricas (RMSE, MAE, R²), curvas de predicción y dataset final de predicciones (Parquet).
 
 Ejecutar con:
 ```bash
@@ -138,3 +143,9 @@ Ejecutar con:
 streamlit run src/5_visualization/dashboard.py
 
 ```
+
+---
+## Autores
+* Samuel Soriano Chávez
+* Guillermo Carreto Sánchez
+* Juan Carlos Flores Mora
